@@ -154,10 +154,11 @@ body{
 }
 .habilidades__descrip__item img{
     width: 5.5em;
-    transition: 0.7s;
+    transition: 1.5s;
 }
 .habilidades__descrip__item img:hover{
     filter: drop-shadow(1px 1px 8px #dad6d6);
+    transform: rotate(360deg);
     cursor: pointer;
 }
 .habilidades__descrip__item p{
