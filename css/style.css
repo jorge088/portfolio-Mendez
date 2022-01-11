@@ -50,9 +50,12 @@ body{
 }
 .header__nav__list__item:focus{
     color: #fff;
+    
 }
 .active{
     border-bottom: 1px solid #fff;
+    text-shadow: 1px 0 0 #fff;
+
 }
 /*----------------FIN NAV----------------- */
 .header__titulo {
