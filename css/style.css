@@ -31,6 +31,17 @@ body{
     padding: .3em 1em;
     background-color: #064663;
 }
+.header__nav__logo{
+    font-size: 2em;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.header__nav__logo:hover{
+    color: #fff;
+    font-weight: bolder;
+}
 .header__nav__button{
     margin-left: auto;
 }
@@ -38,7 +49,7 @@ body{
     margin-left: auto;
 }
 .header__nav__list__item{
-    color: #fff;
+    color: #dad6d6;
     font-weight: bolder;
     font-size: 1.2em;
     font-family: 'Alegreya Sans', sans-serif;
@@ -75,14 +86,23 @@ body{
 /* PRESENTACION */
 .presentacion{
     align-items: center;
-    margin: 2rem auto;
+    margin: 5rem auto;
     font-size: 1.8rem;
+}
+.presentacion__info__subtitulo{
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 .presentacion__info__titulo{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-family: 'Alegreya Sans', sans-serif;
-    color: white;
+    color: #fff;
+    margin: .2em 0;
 }
 .presentacion__info__texto{
     font-size: .7em;
@@ -112,14 +132,14 @@ body{
 /* HABILIDADES */
 .habilidades{
     border-top: 3px solid white;
-    margin: 2rem auto;
+    margin: 4rem auto;
     font-size: 1rem;
 }
 .habilidades__titulo {
     text-align: center;
     font-family: 'Alegreya Sans', sans-serif;
     text-decoration: underline;
-    font-size: 1.4em;
+    font-size: 1.7em;
     margin: 1.2em 0;
 }
 .habilidades__descrip {
@@ -146,7 +166,7 @@ body{
     font-family: 'Varela Round', sans-serif;
     font-size: .9em;
     font-weight: 900;
-    padding: .2em 0;
+    padding: .5em 0;
     font-style: italic;
 }
 /* FIN HABILIDADES */
@@ -410,7 +430,6 @@ body{
 
 /* FOOTER */
 .footer{
-    grid-area: footer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -419,8 +438,9 @@ body{
     width: 100%;
 }
 .footer__text{
+    text-align: center;
     font-size: 1.2em;
-    padding: .2em 0;
+    margin: 0;
     font-family: 'Varela Round', sans-serif;
     color: #ECB365;
 }
@@ -428,7 +448,7 @@ body{
     padding: .5em 0;
 }
 .footer__icons a img{
-    width: 2.6em;
+    width: 2.8em;
     margin: .2em 1em;
     transition: .7s;
 }
@@ -438,9 +458,6 @@ body{
 .footer__icons__lk img:hover{
     filter: drop-shadow(1px 1px 10px rgb(90, 134, 199));
 }
-.footer__icons__wp img:hover{
-    filter: drop-shadow(1px 1px 10px rgb(71, 224, 97));
-}
 /* FIN FOOTER */
 
 /* INICIO MEDIA QUERIES */
@@ -449,6 +466,14 @@ body{
         font-size: 2.5rem;
     }
     /* INICIO PAGINA INICIO */
+    .presentacion{
+        margin: 3rem auto;
+        font-size: 1.6rem;
+    }
+    .presentacion__info__texto{
+        padding: .2em;
+    }
+
     .habilidades{
         font-size: .9rem;
     } 
@@ -510,8 +535,16 @@ body{
         font-size: 2.5rem;
     }
     /* INICIO PAGINA INICIO */
+    .presentacion{
+        margin: 2rem auto;
+        font-size: 1.7rem;
+    }
+    .presentacion__info__texto{
+        padding: .4em;
+    }
+
     .habilidades{
-        font-size: .8rem;
+        font-size: .9rem;
     } 
     /* FIN PAGINA INICIO */
     
@@ -565,9 +598,14 @@ body{
 }
 @media only screen and (min-width:768px) and (max-width:992px) {
     /* INICIO PAGINA INICIO */
-    .habilidades{
-        font-size: .9rem;
+    .presentacion{
+        margin: 2rem auto;
+        font-size: 1.8rem;
     }
+    .presentacion__info__texto{
+        padding: .5em;
+    }
+
     /* FIN PAGINA INICIO  */
 
     /* INICIO PAGINA SOBRE MI */
