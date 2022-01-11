@@ -5,77 +5,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/all.css">
+    <link rel="stylesheet" href="./../css/bootstrap.min.css">
     <link rel="stylesheet" href="./../css/normalize.css">
     <link rel="stylesheet" href="./../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bree+Serif&display=swap" rel="stylesheet">
-
+    <script src="./../js/bootstrap.min.js"></script>
     <title>Proyectos</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="header">
-        <h2 class="header__titulo"><a href="#">Portfolio</a></h2>
-        <nav class="header__nav">
-            <ul>
-                <li><a href="./../index.html">Inicio</a></li>
-                <li><a href="./../pages/sobre-mi.html">Sobre Mi</a></li>
-                <li class="active"><a href="#">Proyectos</a></li>
-                <li><a href="./../pages/galeria.html">Galeria</a></li>
-                <li><a href="./../pages/contacto.html">Contacto</a></li>
-                <li><a href="./../pages/curriculum.html">CV</a></li>
-            </ul>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-sm  header__nav ">
+            <button class="navbar-toggler custom-toggler header__nav__button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav header__nav__list">
+                    <li class="nav-item">
+                        <a class="nav-link header__nav__list__item" href="./../index.html">Inicio <i
+                                class="fas fa-home"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__nav__list__item" href="./../pages/sobre-mi.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link header__nav__list__item" href="#">Proyectos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link header__nav__list__item" href="./../pages/galeria.html">Galeria </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link header__nav__list__item" href="./../pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link header__nav__list__item" href="./../pages/curriculum.html">CV <i
+                                class="fas fa-download"></i></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <!-- END NAV -->
     </header>
-    <!-- FIN HEADER -->
-    
-    <div class="contenido">
-        <div class="titulo">
-            <h2>
-                Mis proyectos
-            </h2>
-        </div>
-        <!-- PROYECTOS -->
-        <div class="proyectos">
-            <div class="proyectos__item">
-                <div class="proyectos__item__img">
-                    <img src="./../assets/images/portfolio.png" alt="proyecto portfolio">
-                </div>
-                <div class="proyectos__item__detalle">
-                    <h3>Portfolio Personal:</h3>
-                    <p>Maquetado y diseño de pagina personal. Utilizando HTML5 y CSS3.</p>
-                    <a class="proyectos__item__detalle__boton" href="./../index.html"><span>Ver Sitio</span></a>
-                </div>
-            </div>
-            <div class="proyectos__item">
-                <div class="proyectos__item__img">
-                    <img src="./../assets/images/portfolio.png" alt="proyecto portfolio">
-                </div>
-                <div class="proyectos__item__detalle">
-                    <h3>Portfolio Personal:</h3>
-                    <p>Maquetado y diseño de pagina personal. Utilizando HTML5 y CSS3.</p>
-                    <a class="proyectos__item__detalle__boton" href="./../index.html"><span>Ver Sitio</span></a>
-                </div>
-            </div>
-            <div class="proyectos__item">
-                <div class="proyectos__item__img">
-                    <img src="./../assets/images/portfolio.png" alt="proyecto portfolio">
-                </div>
-                <div class="proyectos__item__detalle">
-                    <h3>Portfolio Personal:</h3>
-                    <p>Maquetado y diseño de pagina personal. Utilizando HTML5 y CSS3.</p>
-                    <a class="proyectos__item__detalle__boton" href="./../index.html"><span>Ver Sitio</span></a>
-                </div>
-            </div>
-
-
-        </div>
-
-        <!--FIN PROYECTOS -->
+    <div class="titulo">
+        <h2>
+            Mis proyectos
+        </h2>
     </div>
+    <!-- FIN HEADER -->
+
+
+    <!-- PROYECTOS -->
+    <div class=" container proyectos">
+        <div class="row col-12 mx-0 proyectos__item">
+            <div class="col-xl-8 col-xs-12 col-lg-12 proyectos__item__img">
+                <img src="./../assets/images/portfolio.png" alt="proyecto portfolio">
+            </div>
+            <div class="col-xl-4 col-xs-12 col-lg-12 proyectos__item__detalle">
+                <h3>Portfolio Personal:</h3>
+                <p>Maquetado y diseño de pagina personal. Utilizando HTML5 y CSS3.</p>
+                <a class="proyectos__item__detalle__boton" href="./../index.html"><span>Ver Sitio</span></a>
+            </div>
+        </div>
+        <div class="row col-12 mx-0 proyectos__item">
+            <div class="col-xl-8 col-xs-12 col-lg-12 proyectos__item__img">
+                <img src="./../assets/images/portfolio.png" alt="proyecto portfolio">
+            </div>
+            <div class="col-xl-4 col-xs-12 col-lg-12 proyectos__item__detalle">
+                <h3>Portfolio Personal:</h3>
+                <p>Maquetado y diseño de pagina personal. Utilizando HTML5 y CSS3.</p>
+                <a class="proyectos__item__detalle__boton" href="./../index.html"><span>Ver Sitio</span></a>
+            </div>
+        </div>
+        <div class="row col-12 mx-0 proyectos__item">
+            <div class="col-xl-8 col-xs-12 col-lg-12 proyectos__item__img">
+                <img src="./../assets/images/portfolio.png" alt="proyecto portfolio">
+            </div>
+            <div class="col-xl-4 col-xs-12 col-lg-12 proyectos__item__detalle">
+                <h3>Portfolio Personal:</h3>
+                <p>Maquetado y diseño de pagina personal. Utilizando HTML5 y CSS3.</p>
+                <a class="proyectos__item__detalle__boton" href="./../index.html"><span>Ver Sitio</span></a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!--FIN PROYECTOS -->
 
     <!-- Footer -->
     <footer class="footer">

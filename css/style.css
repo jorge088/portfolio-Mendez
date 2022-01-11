@@ -10,31 +10,51 @@ html{
 }
 body{
     background-color: #041C32;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "header"
-    "contenido"
-    "footer";
 }
-.contenido{
-    grid-area: contenido;
-}
-
 /* HEADER */
 .header{
-    grid-area: header;
-    display:flex;
-    flex-wrap: wrap;
-    background-color: #064663;
     position: sticky;
-    top: 0;
     z-index: 100;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 2rem;
-    
+    margin-left: 0;
+    top: 0;
+    font-size: 1rem;
 }
+/* ---------------NAV------------------- */
+/* codigo para cambiar de color el icono de menú hamburguesa */
+.custom-toggler .navbar-toggler-icon { 
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+    border:  1px solid white;
+}
+.header__nav{
+    padding: .3em 1em;
+    background-color: #064663;
+}
+.header__nav__button{
+    margin-left: auto;
+}
+.header__nav__list{
+    margin-left: auto;
+}
+.header__nav__list__item{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.2em;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.header__nav__list__item:hover{
+    color: #fff;
+    text-shadow: 1px 0 0 #fff;
+    transition: 0.25s;
+}
+.header__nav__list__item:focus{
+    color: #fff;
+}
+.active{
+    border-bottom: 1px solid #fff;
+}
+/*----------------FIN NAV----------------- */
 .header__titulo {
     font-weight: 700;
     font-family: 'Alegreya Sans', sans-serif;
@@ -44,48 +64,13 @@ body{
 .header__titulo a{
     color: #ECB365;
 }
-.header__nav ul li{
-    display: inline;
-    padding: .1em 0 .1em 0;
-    margin: 0 .5em 0 0;
-    border: none;
-    
-}
-.header__nav ul li a{
-    text-decoration: none;
-    color: #ECB365;
-    font-family: 'Varela Round', sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
-    letter-spacing: 0;
-    transition: .1s;
-}
-.header__nav ul .active {
-   border-bottom: 2.5px solid white;
-}
-.header__nav ul .active a{
-    color: rgb(243, 234, 224);
-}
-.header__nav ul li a:hover{
-    color: rgb(243, 234, 224);
-}
 /* FIN HEADER */
 
 /* PRESENTACION */
 .presentacion{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-    "presentacion presentacion-imagen";
-    grid-column-gap: 3px;
-    grid-row-gap: 5px;
     align-items: center;
-    width: 90%;
     margin: 2rem auto;
     font-size: 1.8rem;
-}
-.presentacion__info{
-    grid-area: presentacion;
 }
 .presentacion__info__titulo{
     text-align: center;
@@ -115,33 +100,23 @@ body{
     clip-path: circle(5.5em at 49% 50%);
     background-color: rgb(214, 209, 207);
     cursor: pointer;
-
 }
 /* FIN PRESENTACIÓN */
 
 /* HABILIDADES */
 .habilidades{
-    width: 90%;
     border-top: 3px solid white;
     margin: 2rem auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "titulo"
-    "habilidades";
     font-size: 1rem;
 }
 .habilidades__titulo {
-    grid-area: titulo;
     text-align: center;
     font-family: 'Alegreya Sans', sans-serif;
     text-decoration: underline;
     font-size: 1.4em;
-    color: white;
     margin: 1.2em 0;
 }
 .habilidades__descrip {
-    grid-area: habilidades;
     text-align: center;
     display: flex;
     justify-content:space-around;
@@ -197,9 +172,7 @@ body{
  /* INFORMACION */
 .informacion{
     width: 95%;
-    display: grid;
     margin: 2rem auto;
-    grid-template-columns: repeat(3,1fr);
     font-size: 1rem;
 }
 .informacion__item{
@@ -215,7 +188,7 @@ body{
     height: 100%;
     background-color: #0b384d;
     position: absolute;
-    top:-40em;
+    top:-80em;
     left: 0;
     transition: .7s ease-in-out all;
 }
@@ -223,7 +196,7 @@ body{
     position: relative;
     z-index: 2;
     transition: .7s ease all;
-    padding: 1em 2em;
+    padding: 1em 1em;
 }
 .informacion__item:hover::after{
     top: 0;
@@ -257,30 +230,25 @@ body{
  
 /* PROYECTOS */
 .proyectos{
-    width: 95%;
     margin: 2rem auto;
     font-size: 1rem;
 }
 .proyectos__item{
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-gap: 10px;
     align-items: center;
-    margin-bottom: 4em;
-    border-bottom: 4px solid white;
-}
-.proyectos__item__img{
-    width: 100%;
     text-align: center;
+    margin:4em 0;
+    padding-bottom: 2em;
+    border-bottom: 2px solid white;
 }
 .proyectos__item__img img{
-    width: 40em;
+    width: 90%;
     margin: 1em;
 }
 .proyectos__item__detalle{
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: center;
     gap: 10px;
 }
 .proyectos__item__detalle h3{
@@ -289,7 +257,6 @@ body{
     font-size: 2em;
 }
 .proyectos__item__detalle p{
-    text-align: justify;
     font-family: 'Varela Round', sans-serif;
     font-size: 1.1em;
     margin: 1em 0;
@@ -307,7 +274,7 @@ body{
     border-radius: 2px;
     cursor: pointer;
     overflow: hidden;
-    margin-bottom: 1em;
+    margin: 1em auto;
 }
 .proyectos__item__detalle__boton span{
     position: relative;
@@ -322,7 +289,7 @@ body{
     z-index: 1;
     position: absolute;
     border-radius: 0 0 100% 100%;
-    transition: .7s ease-in-out all;
+    transition: .4s ease-in-out all;
     background-color: #bd7e27;
 }
 .proyectos__item__detalle__boton:hover::after{
@@ -348,11 +315,7 @@ body{
 
 /* GALERIA */
 .galeria{
-    width: 95%;
     margin: 2rem auto;
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    gap: 30px;
     text-align: center;
     font-size: 1rem;
 }
@@ -368,7 +331,6 @@ body{
     box-shadow: 1px 1px 14px #fff;
 }
 .galeria__item__descrip{
-    text-align: center;
     font-family: 'Varela Round', sans-serif;
     font-size: 1.2em;
     margin: .4em 0;
@@ -378,42 +340,20 @@ body{
 
 /* FORMULARIO DE CONTACTO */
 .formulario{
-    width: 40%;
+    width: 50%;
     margin: 2rem auto;
-    font-size: 1rem;
-}
-.formulario__form{
-    display: flex;
-    flex-direction: column;
-}
-.formulario__form label{
+    font-size: 1.3rem;
     font-family: 'Varela Round', sans-serif;
-    font-size: 1.4em;
-}
-.formulario__form label input{
-    width: 100%;
-    height: 1.5em;
-    margin-bottom: .6em;
-    color: black;
-}
-.formulario__form label input:focus{
-    outline: #064663 solid 3px;
-}
-.formulario__form label textarea{
-    width: 100%;
-    height: 5em;
-    margin-bottom: 1em;
-    color: black;
+
 }
 .formulario__form label textarea:focus{
     outline: #064663 solid 3px;
 }
 .formulario__form_boton{
-    height: 2.2em;
-    background-color: #ECB365;
+    width: 100%;
     color: #fff;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    transition: .5s;
 }
 /* FIN DE FORMULARIO DE CONTACTO */
 
@@ -448,13 +388,13 @@ body{
 .cv__boton::after{
     content: "";
     width: 10.4em;
-    height:3.2em;
+    height:4em;
     top: -4em;
     left: 0;
     z-index: 1;
     position: absolute;
     border-radius: 0 0 100% 100%;
-    transition: .7s ease-in-out all;
+    transition: .4s ease-in-out all;
     background-color: #bd7e27;
 }
 .cv__boton:hover::after{
@@ -498,41 +438,19 @@ body{
 /* FIN FOOTER */
 
 /* INICIO MEDIA QUERIES */
-@media only screen and (max-width:480px) {
-    /* INICIO HEADER */
-    .header{
-        flex-direction: column;
-        align-items: flex-start;
-        font-size: 1.6rem;
-    }
-    .header__nav ul li{
-        display: block;
-        margin: 0 0 0 .6em;
-    }
+@media only screen and (max-width:575px) {
     .titulo{
         font-size: 2.5rem;
     }
-    /* FIN HEADER */
-    /* PAGINA INICIO */
-    .presentacion{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "presentacion"
-        "presentacion-imagen";
-        width: 90%;
-        font-size: 1.7rem;
-    }
+    /* INICIO PAGINA INICIO */
     .habilidades{
-        width: 90%;
         font-size: .9rem;
-    }
+    } 
     /* FIN PAGINA INICIO */
 
     /* INICIO PAGINA SOBRE MI */
     .informacion{
-        grid-template-columns: 1fr ;
         font-size: 1rem;
-        width: 90%;
     }
     .informacion__bordes{
         border-right:none;
@@ -544,18 +462,20 @@ body{
 
     /* INICIO PROYECTOS */
     .proyectos{
-        width: 90%;
         font-size: .8rem;
     }
     .proyectos__item{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 10px;
     }
-    
     .proyectos__item__img img{
-      width: 100%;
-      margin: 0;
+        width: 100%;
+        margin: 0;
+    }
+    .proyectos__item__detalle{
+        margin: 1em 0;
+    }
+    .proyectos__item__detalle p{
+        margin: 0;
     }
     .proyectos__item__detalle__boton{
         margin: 1em auto;
@@ -565,54 +485,33 @@ body{
     /* INICIO PAGINA GALERIA */
     .cancion{
         width: 90%;
-        font-size: .8rem; 
+        font-size: .6rem; 
     }
     .galeria{
-        grid-template-columns: 1fr;
         font-size: .9rem;
     }
     /* FIN PAGINA GALERIA */
 
     /* INICIO PAGINA CONTACTO */
     .formulario{
-        width: 90%;
+        width: 100%;
         font-size: .8rem;
     }
     /* FIN PAGINA CONTACTO */
 }
-@media only screen and (min-width:481px) and (max-width:768px) {
-    /* INICIO HEADER */
-    .header{
-        font-size: 1.6rem;
-    }
-    .header__nav ul li{
-        padding: 0;
-    }
+@media only screen and (min-width:576px) and (max-width:767px) {
     .titulo{
         font-size: 2.5rem;
     }
-    /* FIN HEADER */
-
     /* INICIO PAGINA INICIO */
-    .presentacion{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "presentacion"
-        "presentacion-imagen";
-        width: 95%;
-        font-size: 1.6rem;
-    }
     .habilidades{
-        width: 95%;
         font-size: .8rem;
-    }
+    } 
     /* FIN PAGINA INICIO */
     
     /* INICIO PAGINA SOBRE MI */
     .informacion{
-        grid-template-columns: 1fr ;
         font-size: 1rem;
-        width: 95%;
     }
     .informacion__bordes{
         border-right:none;
@@ -624,22 +523,17 @@ body{
 
     /* INICIO PAGINA PROYECTOS */
     .proyectos{
-        width: 95%;
         font-size: .9rem;
     }
-    .proyectos__item{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 15px;
-        text-align: center;
+    .proyectos__item__detalle{
+        margin: 1em 0;
     }
     .proyectos__item__detalle p{
-        text-align: center;
-        margin: .5em 0;
+        margin: 0;
     }
     .proyectos__item__img img{
-      width: 100%;
-      margin: 0;
+        width: 100%;
+        margin: 0;
     }
     .proyectos__item__detalle__boton{
         margin: 1em auto;
@@ -648,49 +542,31 @@ body{
 
     /* INICIO PAGINA GALERIA */
     .cancion{
-        width: 90%;
+        width: 100%;
         font-size: .8rem; 
     }
     .galeria{
-        grid-template-columns: 1fr;
         font-size: .9rem;
     }
     /* FIN PAGINA GALERIA */
     
     /* INICIO PAGINA CONTACTO */
     .formulario{
-        width: 70%;
+        width: 90%;
         font-size: .8rem;
     }
     /* FIN PAGINA CONTACTO */
 }
-@media only screen and (min-width:769px) and (max-width:1024px) {
-    /* INICIO HEADER */
-    .titulo{
-        font-size: 2.8rem;
-    }
-    /* FIN HEADER */
-
+@media only screen and (min-width:768px) and (max-width:992px) {
     /* INICIO PAGINA INICIO */
-    .presentacion{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "presentacion"
-        "presentacion-imagen";
-        width: 95%;
-        font-size: 1.7rem;
-    }
     .habilidades{
-        width: 95%;
         font-size: .9rem;
     }
-    /* FIN PAGINA INICIO */
+    /* FIN PAGINA INICIO  */
 
     /* INICIO PAGINA SOBRE MI */
     .informacion{
-        grid-template-columns: 1fr ;
-        font-size: .9rem;
-        width: 95%;
+        font-size: 1rem;
     }
     .informacion__bordes{
         border-right:none;
@@ -702,20 +578,17 @@ body{
 
     /* INICIO PAGINA PROYECTOS */
     .proyectos{
-        width: 95%;
-        font-size: .9rem;
+        font-size: 1rem;
     }
-    .proyectos__item{
-        display: grid;
-        grid-template-columns: 1fr;
+    .proyectos__item__detalle{
+        margin: 1em 0;
     }
     .proyectos__item__detalle p{
-        text-align: center;
-        margin: .4em 0;
+        margin: 0;
     }
     .proyectos__item__img img{
-      width: 100%;
-      margin: 0;
+        width: 100%;
+        margin: 0;
     }
     .proyectos__item__detalle__boton{
         margin: 1em auto;
@@ -724,18 +597,17 @@ body{
 
     /* INICIO PAGINA GALERIA */
     .cancion{
-        width: 60%;
-        font-size: .8rem; 
+        width: 100%;
+        font-size: .6rem; 
     }
     .galeria{
-        grid-template-columns: 1fr;
         font-size: .9rem;
     }
     /* FIN PAGINA GALERIA */
 
     /* INICIO PAGINA CONTACTO */
     .formulario{
-        width: 60%;
+        width: 80%;
         font-size: .8rem;
     }
     /* FIN PAGINA CONTACTO */

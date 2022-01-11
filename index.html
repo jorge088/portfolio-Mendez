@@ -5,34 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bree+Serif&display=swap" rel="stylesheet">
+    <script src="./js/bootstrap.min.js"></script>
     <title>Jorge Mendez</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="header">
-        <h2 class="header__titulo"><a href="#">Portfolio</a></h2>
-        <nav class="header__nav">
-            <ul>
-                <li class="active"><a href="#">Inicio</a></li>
-                <li><a href="./pages/sobre-mi.html">Sobre Mi</a></li>
-                <li><a href="./pages/proyectos.html">Proyectos</a></li>
-                <li><a href="./pages/galeria.html">Galeria</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/curriculum.html">CV</a></li>
-            </ul>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-sm   header__nav ">
+            <button class="navbar-toggler custom-toggler header__nav__button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav header__nav__list">
+                    <li class="nav-item active">
+                        <a class="nav-link header__nav__list__item " href="#">Inicio <i class="fas fa-home"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__nav__list__item" href="./pages/sobre-mi.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link header__nav__list__item" href="./pages/proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link header__nav__list__item" href="./pages/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link header__nav__list__item" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link header__nav__list__item" href="./pages/curriculum.html">CV <i
+                                class="fas fa-download"></i></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <!-- END NAV -->
     </header>
     <!-- FIN HEADER -->
-    <div class="contenido">
-        <main class="presentacion">
-            <div class="presentacion__info">
+    <div class="container">
+        <main class="row col-12 mx-0 presentacion">
+            <div class="col-xl-8 col-xs-12 presentacion__info">
                 <h1 class="presentacion__info__titulo">Jorge Mendez</h1>
                 <p class="presentacion__info__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Praesentium
@@ -41,15 +65,15 @@
                     distinctio corrupti provident quasi omnis, soluta, nostrum deleniti nihil quam voluptatem? Natus
                     laudantium quos nihil soluta voluptatum a omnis illo, fugiat architecto recusandae facilis.</p>
             </div>
-            <div class="presentacion__imagen">
+            <div class="col-xl-4 col-xs-12 presentacion__imagen">
             </div>
         </main>
 
-        <div class="habilidades">
-            <div class="habilidades__titulo">
+        <div class="row col-12 habilidades">
+            <div class="col-12 habilidades__titulo">
                 <h2>Habilidades</h2>
             </div>
-            <div class="habilidades__descrip">
+            <div class="col-12 habilidades__descrip">
                 <div class="habilidades__descrip__item">
                     <img src="./assets/images/html-logo.png">
                     <p>HTML5</p>
