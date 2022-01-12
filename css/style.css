@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 html{
@@ -24,8 +24,8 @@ body{
 .custom-toggler .navbar-toggler-icon { 
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.custom-toggler .navbar-toggler {
-    border:  1px solid white;
+.custom-toggler.navbar-toggler {
+    border:  1px solid #fff;
 }
 .header__nav{
     padding: .3em 1em;
@@ -131,7 +131,7 @@ body{
 
 /* HABILIDADES */
 .habilidades{
-    border-top: 3px solid white;
+    border-top: 3px solid #fff;
     margin: 4rem auto;
     font-size: 1rem;
 }
@@ -264,7 +264,7 @@ body{
     text-align: center;
     margin:4em 0;
     padding-bottom: 2em;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #fff;
 }
 .proyectos__item__img img{
     width: 90%;
