@@ -78,6 +78,51 @@
 }
 
 /* FIN TITULO */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #04293A;
+  font-size: 1rem;
+  width: 100%;
+}
+.footer__text {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0;
+  font-family: "Varela Round", sans-serif;
+  color: #ECB365;
+}
+.footer__icons {
+  padding: 0.5em 0;
+}
+.footer__icons a img {
+  width: 2.8em;
+  margin: 0.2em 1em;
+  transition: 0.7s;
+}
+.footer__icons__ig img:hover {
+  filter: drop-shadow(1px 1px 10px #f341e4);
+}
+.footer__icons__lk img:hover {
+  filter: drop-shadow(1px 1px 10px #5a86c7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+html body {
+  background-color: #041C32;
+}
+
 .presentacion {
   align-items: center;
   margin: 5rem auto;
@@ -160,36 +205,6 @@
   font-weight: 900;
   padding: 0.5em 0;
   font-style: italic;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #04293A;
-  font-size: 1rem;
-  width: 100%;
-}
-.footer__text {
-  text-align: center;
-  font-size: 1.2em;
-  margin: 0;
-  font-family: "Varela Round", sans-serif;
-  color: #ECB365;
-}
-.footer__icons {
-  padding: 0.5em 0;
-}
-.footer__icons a img {
-  width: 2.8em;
-  margin: 0.2em 1em;
-  transition: 0.7s;
-}
-.footer__icons__ig img:hover {
-  filter: drop-shadow(1px 1px 10px #f341e4);
-}
-.footer__icons__lk img:hover {
-  filter: drop-shadow(1px 1px 10px #5a86c7);
 }
 
 /* INFORMACION */
@@ -420,19 +435,5 @@
 }
 
 /* FIN CV */
-* {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  text-decoration: none;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 16px;
-}
-html body {
-  background-color: #041C32;
-}
 
 /*# sourceMappingURL=style.css.map */
