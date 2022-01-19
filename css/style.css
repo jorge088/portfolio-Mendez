@@ -435,5 +435,209 @@ html body {
 }
 
 /* FIN CV */
+/* INICIO MEDIA QUERIES */
+@media only screen and (max-width: 575px) {
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  /* INICIO PAGINA INICIO */
+  .presentacion {
+    margin: 3rem auto;
+    font-size: 1.6rem;
+  }
+  .presentacion__info__texto {
+    padding: 0.2em;
+  }
+
+  .habilidades {
+    font-size: 0.9rem;
+  }
+
+  /* FIN PAGINA INICIO */
+  /* INICIO PAGINA SOBRE MI */
+  .informacion {
+    font-size: 1rem;
+  }
+  .informacion__bordes {
+    border-right: none;
+    border-left: none;
+    border-top: 3px solid #ECB365;
+    border-bottom: 3px solid #ECB365;
+  }
+
+  /* FIN PAGINA SOBRE MI */
+  /* INICIO PROYECTOS */
+  .proyectos {
+    font-size: 0.8rem;
+  }
+  .proyectos__item {
+    gap: 10px;
+  }
+  .proyectos__item__img img {
+    width: 100%;
+    margin: 0;
+  }
+  .proyectos__item__detalle {
+    margin: 1em 0;
+  }
+  .proyectos__item__detalle p {
+    margin: 0;
+  }
+  .proyectos__item__detalle__boton {
+    margin: 1em auto;
+  }
+
+  /* FIN PAGINA PROYECTOS */
+  /* INICIO PAGINA GALERIA */
+  .cancion {
+    width: 90%;
+    font-size: 0.6rem;
+  }
+
+  .galeria {
+    font-size: 0.9rem;
+  }
+
+  /* FIN PAGINA GALERIA */
+  /* INICIO PAGINA CONTACTO */
+  .formulario {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  /* FIN PAGINA CONTACTO */
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  /* INICIO PAGINA INICIO */
+  .presentacion {
+    margin: 2rem auto;
+    font-size: 1.7rem;
+  }
+  .presentacion__info__texto {
+    padding: 0.4em;
+  }
+
+  .habilidades {
+    font-size: 0.9rem;
+  }
+
+  /* FIN PAGINA INICIO */
+  /* INICIO PAGINA SOBRE MI */
+  .informacion {
+    font-size: 1rem;
+  }
+  .informacion__bordes {
+    border-right: none;
+    border-left: none;
+    border-top: 3px solid #ECB365;
+    border-bottom: 3px solid #ECB365;
+  }
+
+  /* FIN PAGINA SOBRE MI */
+  /* INICIO PAGINA PROYECTOS */
+  .proyectos {
+    font-size: 0.9rem;
+  }
+  .proyectos__item__detalle {
+    margin: 1em 0;
+  }
+  .proyectos__item__detalle p {
+    margin: 0;
+  }
+  .proyectos__item__detalle__boton {
+    margin: 1em auto;
+  }
+  .proyectos__item__img img {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* FIN PAGINA PROYECTOS */
+  /* INICIO PAGINA GALERIA */
+  .cancion {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .galeria {
+    font-size: 0.9rem;
+  }
+
+  /* FIN PAGINA GALERIA */
+  /* INICIO PAGINA CONTACTO */
+  .formulario {
+    width: 90%;
+    font-size: 0.8rem;
+  }
+
+  /* FIN PAGINA CONTACTO */
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* INICIO PAGINA INICIO */
+  .presentacion {
+    margin: 2rem auto;
+    font-size: 1.8rem;
+  }
+  .presentacion__info__texto {
+    padding: 0.5em;
+  }
+
+  /* FIN PAGINA INICIO  */
+  /* INICIO PAGINA SOBRE MI */
+  .informacion {
+    font-size: 1rem;
+  }
+  .informacion__bordes {
+    border-right: none;
+    border-left: none;
+    border-top: 3px solid #ECB365;
+    border-bottom: 3px solid #ECB365;
+  }
+
+  /* FIN PAGINA SOBRE MI */
+  /* INICIO PAGINA PROYECTOS */
+  .proyectos {
+    font-size: 1rem;
+  }
+  .proyectos__item__detalle {
+    margin: 1em 0;
+  }
+  .proyectos__item__detalle p {
+    margin: 0;
+  }
+  .proyectos__item__detalle__boton {
+    margin: 1em auto;
+  }
+  .proyectos__item__img img {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* FIN PAGINA PROYECTOS */
+  /* INICIO PAGINA GALERIA */
+  .cancion {
+    width: 100%;
+    font-size: 0.6rem;
+  }
+
+  .galeria {
+    font-size: 0.9rem;
+  }
+
+  /* FIN PAGINA GALERIA */
+  /* INICIO PAGINA CONTACTO */
+  .formulario {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+
+  /* FIN PAGINA CONTACTO */
+}
+/* FIN MEDIA QUERIES */
 
 /*# sourceMappingURL=style.css.map */
