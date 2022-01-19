@@ -1,0 +1,25 @@
+@import 'header';
+@import 'presentacion';
+@import 'habilidades';
+@import 'footer';
+@import 'sobreMi';
+@import 'proyectos';
+@import 'galeria';
+@import 'formulario';
+@import 'cv';
+
+$azul-base:#041C32;
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    body{
+        background-color: $azul-base;
+    }
+}

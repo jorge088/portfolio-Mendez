@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #04293A;
+    font-size: 1rem;
+    width: 100%;
+    &__text{
+        text-align: center;
+        font-size: 1.2em;
+        margin: 0;
+        font-family: 'Varela Round', sans-serif;
+        color: #ECB365;
+    }
+    &__icons{
+        padding: .5em 0;
+        & a img{
+            width: 2.8em;
+            margin: .2em 1em;
+            transition: .7s;
+        }
+        &__ig img:hover{
+            filter: drop-shadow(1px 1px 10px rgb(243, 65, 228));
+        }
+        &__lk img:hover{
+            filter: drop-shadow(1px 1px 10px rgb(90, 134, 199));
+        }
+    }
+}
