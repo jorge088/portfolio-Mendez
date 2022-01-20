@@ -1,0 +1,51 @@
+/* PROYECTOS */
+.proyectos{
+    margin: 2rem auto;
+    font-size: 1rem;
+    &__item{
+        align-items: center;
+        text-align: center;
+        margin:4em 0;
+        padding-bottom: 2em;
+        border-bottom: 2px solid #fff;
+        &__img img{
+            width: 90%;
+            margin: 1em;
+        }
+        &__detalle{
+            @include flex($direccion:column , $justifyCont:center , $alignItems:center);
+            gap: 10px;
+            & h3{
+                @include titulos_font($fontSize:2.4em);
+            }
+            & p{
+                @include text_font($fontSize:1.1em,$textAlign:center);
+                 margin: 1em 0;
+            }
+            &__boton{
+                @include boton($fontSize:1.4em , $width:8em , $padding:.2em);
+                margin: 1em auto;
+                & span{
+                    position: relative;
+                    z-index: 2;
+                }
+                &::after{
+                    content: "";
+                    width: 8.4em;
+                    height:3.2em;
+                    top: -4em;
+                    left: 0;
+                    z-index: 1;
+                    position: absolute;
+                    border-radius: 0 0 100% 100%;
+                    transition: .4s ease-in-out all;
+                    background-color: #bd7e27;
+                }
+                &:hover::after{
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+/* FIN PROYECTOS */

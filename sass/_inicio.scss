@@ -1,0 +1,70 @@
+// INICIO PRESENTACION
+.presentacion{
+    align-items: center;
+    margin: 5rem auto;
+    font-size: 1.8rem;
+    &__info__subtitulo{
+        @include titulos_font($fontSize:1.2em);
+        margin: 0;
+        padding: 0;
+    }
+    &__info__titulo{
+        @include titulos_font($fontSize:1.8em);
+        margin: .2em 0;
+    }
+    &__info__texto{
+        @include text_font($fontSize:.7em,$textAlign:justify ,$color:#dad6d6);
+        padding: 0.8em;
+    }
+    &__imagen{
+        background-image: url('./../assets/images/perfil.jpg');
+        background-blend-mode:multiply;
+        width: 12em;
+        height: 12em;
+        margin: auto;
+        clip-path: circle(5em at 49% 50%);
+        background-size:cover;
+        transition: .8s;
+        &:hover{
+            clip-path: circle(5.5em at 49% 50%);
+            background-color: rgb(214, 209, 207);
+            cursor: pointer;
+        }
+    }
+}
+// FIN PRESENTACION
+
+// INICIO HABILIDADES
+.habilidades{
+    border-top: 3px solid #fff;
+    margin: 4rem auto;
+    font-size: 1rem;
+    &__titulo {
+        @include titulos_font($fontSize:1.7em,$textDeco:underline);
+        margin: 1.2em 0;
+    }
+    &__descrip {
+        text-align: center;
+        @include flex($direccion:row , $justifyCont:space-around );
+        &__item {
+            width: 10em;
+            margin: 1em 0;
+            & img{
+                width: 5.5em;
+                transition: 1.5s;
+                &:hover{
+                    filter: drop-shadow(1px 1px 8px #dad6d6);
+                    transform: rotate(360deg);
+                    cursor: pointer;
+                }
+            }
+            & p{
+                @include text_font($fontSize:.9em,$textAlign:center);
+                font-weight: 900;
+                padding: .5em 0;
+                font-style: italic;
+            }
+        }
+    }
+}
+// FIN HABILIDADES

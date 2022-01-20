@@ -1,0 +1,35 @@
+@mixin titulos_font($fontSize:1em,$textDeco:none ,$color:#fff){
+    font-size: $fontSize;
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align: center;
+    color: $color;
+    text-decoration: $textDeco;
+}
+@mixin text_font($fontSize:1em,$textAlign:justify,$color:#fff){
+    font-size: $fontSize;
+    font-family: 'Varela Round', sans-serif;
+    text-align: $textAlign;
+    color: $color;
+}
+@mixin flex($direccion:row , $justifyCont:flex-start , $alignItems:center , $wrap:wrap){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content:$justifyCont;
+    align-items: $alignItems;
+    flex-wrap: $wrap;
+    
+}
+@mixin boton($fontSize:1em , $width:1em , $padding:1em){
+    font-size: $fontSize;
+    width: $width;
+    padding: $padding;
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    background-color: #14709b;
+    border-radius: 2px;
+    cursor: pointer;
+    overflow: hidden;
+}

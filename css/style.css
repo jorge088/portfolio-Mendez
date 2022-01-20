@@ -11,10 +11,11 @@
 }
 .header__nav__logo {
   font-size: 2em;
-  font-weight: 900;
-  text-decoration: none;
-  color: #fff;
   font-family: "Alegreya Sans", sans-serif;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
 }
 .header__nav__logo:hover {
   font-weight: bolder;
@@ -58,39 +59,48 @@
 .titulo {
   width: 100%;
   background-color: #064663;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   text-align: center;
   font-size: 3rem;
 }
 .titulo h2 {
   font-size: 0.6em;
+  font-family: "Alegreya Sans", sans-serif;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
   padding: 0.6em 0;
   font-weight: 700;
-  font-family: "Alegreya Sans", sans-serif;
 }
 .titulo p {
   font-size: 0.4em;
-  padding-bottom: 0.6em;
   font-family: "Varela Round", sans-serif;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 0.6em;
 }
 
 /* FIN TITULO */
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #04293A;
   font-size: 1rem;
   width: 100%;
 }
 .footer__text {
-  text-align: center;
   font-size: 1.2em;
-  margin: 0;
   font-family: "Varela Round", sans-serif;
+  text-align: center;
+  color: #fff;
+  margin: 0;
   color: #ECB365;
 }
 .footer__icons {
@@ -108,50 +118,36 @@
   filter: drop-shadow(1px 1px 10px #5a86c7);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  text-decoration: none;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 16px;
-}
-html body {
-  background-color: #041C32;
-}
-
 .presentacion {
   align-items: center;
   margin: 5rem auto;
   font-size: 1.8rem;
 }
 .presentacion__info__subtitulo {
-  text-align: center;
   font-size: 1.2em;
   font-family: "Alegreya Sans", sans-serif;
+  text-align: center;
   color: #fff;
+  text-decoration: none;
   margin: 0;
   padding: 0;
 }
 .presentacion__info__titulo {
-  text-align: center;
   font-size: 1.8em;
   font-family: "Alegreya Sans", sans-serif;
+  text-align: center;
   color: #fff;
+  text-decoration: none;
   margin: 0.2em 0;
 }
 .presentacion__info__texto {
   font-size: 0.7em;
-  text-align: justify;
-  padding: 0.8em;
   font-family: "Varela Round", sans-serif;
+  text-align: justify;
   color: #dad6d6;
+  padding: 0.8em;
 }
 .presentacion__imagen {
-  grid-area: presentacion-imagen;
   background-image: url("./../assets/images/perfil.jpg");
   background-blend-mode: multiply;
   width: 12em;
@@ -173,18 +169,20 @@ html body {
   font-size: 1rem;
 }
 .habilidades__titulo {
-  text-align: center;
-  font-family: "Alegreya Sans", sans-serif;
-  text-decoration: underline;
   font-size: 1.7em;
+  font-family: "Alegreya Sans", sans-serif;
+  text-align: center;
+  color: #fff;
+  text-decoration: underline;
   margin: 1.2em 0;
 }
 .habilidades__descrip {
   text-align: center;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
 }
 .habilidades__descrip__item {
   width: 10em;
@@ -200,8 +198,10 @@ html body {
   cursor: pointer;
 }
 .habilidades__descrip__item p {
-  font-family: "Varela Round", sans-serif;
   font-size: 0.9em;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  color: #fff;
   font-weight: 900;
   padding: 0.5em 0;
   font-style: italic;
@@ -216,6 +216,9 @@ html body {
 .informacion__item {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -240,13 +243,18 @@ html body {
   padding: 1em 1em;
 }
 .informacion__item h2 {
-  font-size: 1.5em;
-  font-family: "Varela Round", sans-serif;
+  font-size: 1.8em;
+  font-family: "Alegreya Sans", sans-serif;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
   margin: 0.4em 0;
 }
 .informacion__item p {
   font-size: 1.2em;
   font-family: "Varela Round", sans-serif;
+  text-align: justify;
+  color: #fff;
   margin: 0.4em 0;
 }
 .informacion__item__img img {
@@ -283,30 +291,35 @@ html body {
 .proyectos__item__detalle {
   display: flex;
   flex-direction: column;
-  align-content: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .proyectos__item__detalle h3 {
-  text-align: center;
+  font-size: 2.4em;
   font-family: "Alegreya Sans", sans-serif;
-  font-size: 2em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
 }
 .proyectos__item__detalle p {
-  font-family: "Varela Round", sans-serif;
   font-size: 1.1em;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  color: #fff;
   margin: 1em 0;
 }
 .proyectos__item__detalle__boton {
-  text-decoration: none;
+  font-size: 1.4em;
   width: 8em;
   padding: 0.2em;
+  font-weight: bolder;
+  text-decoration: none;
   position: relative;
   text-align: center;
   font-family: "Alegreya Sans", sans-serif;
-  font-size: 1.4em;
   background-color: #14709b;
-  font-weight: bolder;
   border-radius: 2px;
   cursor: pointer;
   overflow: hidden;
@@ -338,14 +351,19 @@ html body {
   margin: 2rem auto;
   width: 50%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   font-size: 1rem;
 }
 .cancion h3 {
+  font-size: 1.4em;
+  font-family: "Alegreya Sans", sans-serif;
   text-align: center;
-  font-family: "Varela Round", sans-serif;
-  font-size: 1, 2em;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* FIN CANCION */
@@ -366,8 +384,10 @@ html body {
   box-shadow: 1px 1px 14px #fff;
 }
 .galeria__item__descrip {
-  font-family: "Varela Round", sans-serif;
   font-size: 1.2em;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  color: #fff;
   margin: 0.4em 0;
 }
 
@@ -394,22 +414,24 @@ html body {
 .cv {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   font-size: 1rem;
   margin: 3rem auto;
 }
 .cv__boton {
-  text-decoration: none;
+  font-size: 1.4em;
   width: 10em;
-  padding: 0.5em 0;
+  padding: 0.5em;
+  font-weight: bolder;
+  text-decoration: none;
   position: relative;
   text-align: center;
   font-family: "Alegreya Sans", sans-serif;
-  font-size: 1.4em;
   background-color: #14709b;
-  font-weight: bolder;
-  border-radius: 10px;
+  border-radius: 2px;
   cursor: pointer;
   overflow: hidden;
   margin-bottom: 1em;
@@ -435,6 +457,21 @@ html body {
 }
 
 /* FIN CV */
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+html body {
+  background-color: #041C32;
+}
+
 /* INICIO MEDIA QUERIES */
 @media only screen and (max-width: 575px) {
   .titulo {
