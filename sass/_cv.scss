@@ -1,9 +1,8 @@
 /* CV */
 .cv{
-    width: 100%;
+    @extend .contenidoCentrado;
     @include flex($direccion:row , $justifyCont:center);
     font-size: 1rem;
-    margin: 3rem auto;
     &__boton{
         @include boton($fontSize:1.4em , $width:10em , $padding:.5em);
         margin-bottom: 1em;

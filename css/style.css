@@ -67,7 +67,7 @@
   text-align: center;
   font-size: 3rem;
 }
-.titulo h2 {
+.titulo h1 {
   font-size: 0.6em;
   font-family: "Alegreya Sans", sans-serif;
   text-align: center;
@@ -296,7 +296,7 @@
   flex-wrap: wrap;
   gap: 10px;
 }
-.proyectos__item__detalle h3 {
+.proyectos__item__detalle h2 {
   font-size: 2.4em;
   font-family: "Alegreya Sans", sans-serif;
   text-align: center;
@@ -394,8 +394,6 @@
 /* FIN GALERIA */
 /* FORMULARIO DE CONTACTO */
 .formulario {
-  width: 50%;
-  margin: 2rem auto;
   font-size: 1.3rem;
   font-family: "Varela Round", sans-serif;
 }
@@ -412,14 +410,12 @@
 /* FIN DE FORMULARIO DE CONTACTO */
 /* CV */
 .cv {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   font-size: 1rem;
-  margin: 3rem auto;
 }
 .cv__boton {
   font-size: 1.4em;
@@ -470,6 +466,11 @@ html {
 }
 html body {
   background-color: #041C32;
+}
+
+.contenidoCentrado, .formulario, .cv {
+  margin: 2em auto;
+  width: 50%;
 }
 
 /* INICIO MEDIA QUERIES */

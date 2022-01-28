@@ -15,7 +15,7 @@
         &__detalle{
             @include flex($direccion:column , $justifyCont:center , $alignItems:center);
             gap: 10px;
-            & h3{
+            & h2{
                 @include titulos_font($fontSize:2.4em);
             }
             & p{

@@ -1,0 +1,42 @@
+En el archivo index.html sumé el SEO con las siguientes caracteristicas:
+==>descripcion: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio:
+“Portfolio personal de Jorge Mendez, desarrollador web front-end y estudiante de ingenieria. Aqui podras conocerme y ver los servicios que realizo"
+==>Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: 
+"PORTFOLIO, JORGE, MENDEZ , PROGRAMADOR, FRONT-END"
+==>Encabezado:para el encabezado del h1 utilicé el texto “Jorge Mendez”
+
+En el archivo proyectos.html sumé el SEO con las siguientes caracteristicas:
+==>descripcion: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: 
+“Sitios web y proyectos desarrollados por Jorge Mendez, visitá los sitios y mirá el codigo"
+==>Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: 
+"PORTFOLIO, PROYECTOS, JORGE, MENDEZ , HTML, CSS, JS "
+==>Encabezado:para el encabezado del h1 utilicé el texto “Mis proyectos”
+
+En el archivo sobre-mi.html sumé el SEO con las siguientes caracteristicas:
+==>descripcion: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio:
+ “Conoce más sobre Jorge Mendez, acerca de mi formación, experiencia y hobbies"
+==>Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: 
+"PORTFOLIO, EXPERIENCIA, FORMACIÓN, HOBBIES, JORGE, MENDEZ "
+==>Encabezado:para el encabezado del h1 utilicé el texto “Sobre mi”
+
+En el archivo galeria.html sumé el SEO con las siguientes caracteristicas:
+==>descripcion: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: 
+"Galeria de imagenes de Jorge Mendez, conocé un poco las actividades que realizó"
+==>Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: 
+"PORTFOLIO, GALERIA, JORGE, MENDEZ, HOBBIES"
+==>Encabezado:para el encabezado del h1 utilicé el texto “Galeria de imagenes”
+
+En el archivo contacto.html sumé el SEO con las siguientes caracteristicas:
+==>descripcion: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: 
+“Contactá a Jorge Mendez."
+==>Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: 
+"PORTFOLIO, CONTACTO, JORGE, MENDEZ"
+==>Encabezado:para el encabezado del h1 utilicé el texto “Contactame”
+
+En el archivo cv.html sumé el SEO con las siguientes caracteristicas:
+==>descripcion: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: 
+“Ver y descargar el curriculum vitae de Jorge Mendez"
+==>Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio:
+ "PORTFOLIO, CURRICULUM VITAE, SERVICIOS, DESARROLLO WEB, JORGE, MENDEZ"
+==>Encabezado:para el encabezado del h1 utilicé el texto “Mirá mi CV”
+

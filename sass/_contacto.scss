@@ -1,7 +1,6 @@
 /* FORMULARIO DE CONTACTO */
 .formulario{
-    width: 50%;
-    margin: 2rem auto;
+    @extend .contenidoCentrado;
     font-size: 1.3rem;
     font-family: 'Varela Round', sans-serif;
     &__form label textarea:focus{
