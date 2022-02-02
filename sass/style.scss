@@ -19,6 +19,9 @@ html{
     font-size: 16px;
     body{
         background-color: $azul-base;
+        position: relative;
+        padding-bottom: 124.8px;
+        min-height: 100vh;
     }
 }
 

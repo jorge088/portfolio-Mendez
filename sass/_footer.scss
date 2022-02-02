@@ -3,6 +3,8 @@
     @include flex($direccion:column , $justifyCont:center);
     background-color: #04293A;
     font-size: 1rem;
+    position:absolute;
+    bottom: 0;
     width: 100%;
     &__text{
         @include text_font($fontSize:1.2em,$textAlign:center);

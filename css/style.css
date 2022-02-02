@@ -93,6 +93,8 @@
   flex-wrap: wrap;
   background-color: #04293A;
   font-size: 1rem;
+  position: absolute;
+  bottom: 0;
   width: 100%;
 }
 .footer__text {
@@ -422,6 +424,9 @@ html {
 }
 html body {
   background-color: #041C32;
+  position: relative;
+  padding-bottom: 124.8px;
+  min-height: 100vh;
 }
 
 .contenidoCentrado, .formulario {
