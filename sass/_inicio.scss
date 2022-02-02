@@ -40,7 +40,7 @@
     margin: 4rem auto;
     font-size: 1rem;
     &__titulo {
-        @include titulos_font($fontSize:1.7em,$textDeco:underline);
+        @include titulos_font($fontSize:1.8em,$textDeco:underline);
         margin: 1.2em 0;
     }
     &__descrip {
@@ -50,7 +50,8 @@
             width: 10em;
             margin: 1em 0;
             & img{
-                width: 5.5em;
+                width: 5.8em;
+                height: auto;
                 transition: 1.5s;
                 &:hover{
                     filter: drop-shadow(1px 1px 8px #dad6d6);

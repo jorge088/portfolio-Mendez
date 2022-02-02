@@ -7,7 +7,6 @@
 @import 'proyectos';
 @import 'galeria';
 @import 'contacto';
-@import 'cv';
 
 *{
     margin: 0;
@@ -22,6 +21,7 @@ html{
         background-color: $azul-base;
     }
 }
+
 .contenidoCentrado{
     margin: 2em auto;
     width: 50%;

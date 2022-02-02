@@ -169,7 +169,7 @@
   font-size: 1rem;
 }
 .habilidades__titulo {
-  font-size: 1.7em;
+  font-size: 1.8em;
   font-family: "Alegreya Sans", sans-serif;
   text-align: center;
   color: #fff;
@@ -189,7 +189,8 @@
   margin: 1em 0;
 }
 .habilidades__descrip__item img {
-  width: 5.5em;
+  width: 5.8em;
+  height: auto;
   transition: 1.5s;
 }
 .habilidades__descrip__item img:hover {
@@ -408,51 +409,6 @@
 }
 
 /* FIN DE FORMULARIO DE CONTACTO */
-/* CV */
-.cv {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  font-size: 1rem;
-}
-.cv__boton {
-  font-size: 1.4em;
-  width: 10em;
-  padding: 0.5em;
-  font-weight: bolder;
-  text-decoration: none;
-  position: relative;
-  text-align: center;
-  font-family: "Alegreya Sans", sans-serif;
-  background-color: #14709b;
-  border-radius: 2px;
-  cursor: pointer;
-  overflow: hidden;
-  margin-bottom: 1em;
-}
-.cv__boton span {
-  position: relative;
-  z-index: 2;
-}
-.cv__boton::after {
-  content: "";
-  width: 10.4em;
-  height: 4em;
-  top: -4em;
-  left: 0;
-  z-index: 1;
-  position: absolute;
-  border-radius: 0 0 100% 100%;
-  transition: 0.4s ease-in-out all;
-  background-color: #bd7e27;
-}
-.cv__boton:hover::after {
-  top: 0;
-}
-
-/* FIN CV */
 * {
   margin: 0;
   padding: 0;
@@ -468,7 +424,7 @@ html body {
   background-color: #041C32;
 }
 
-.contenidoCentrado, .formulario, .cv {
+.contenidoCentrado, .formulario {
   margin: 2em auto;
   width: 50%;
 }
