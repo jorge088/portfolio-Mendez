@@ -159,7 +159,7 @@
 }
 .presentacion__imagen:hover {
   clip-path: circle(5.5em at 49% 50%);
-  background-color: #d6d1cf;
+  background-color: #e4e0de;
   cursor: pointer;
 }
 
