@@ -7,15 +7,16 @@
     bottom: 0;
     width: 100%;
     &__text{
-        @include text_font($fontSize:1.2em,$textAlign:center);
+        @include text_font($fontSize:1.1em,$textAlign:center);
         margin: 0;
         color: #ECB365;
     }
     &__icons{
-        padding: .5em 0;
+        padding: .2em 0;
         & a img{
-            width: 2.8em;
-            margin: .2em 1em;
+            width: 2.2em;
+            height: auto;
+            margin: .2em .5em;
             transition: .7s;
         }
         // &__ig img:hover{

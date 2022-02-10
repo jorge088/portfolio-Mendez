@@ -20,12 +20,12 @@ html{
     body{
         background-color: $azul-base;
         position: relative;
-        padding-bottom: 124.8px;
+        padding-bottom: 74.4px;
         min-height: 100vh;
     }
 }
 
-.contenidoCentrado{
+.contenidoCentrado{ //clase para usar @extend
     margin: 2em auto;
     width: 50%;
 }
@@ -36,10 +36,13 @@ html{
     }
     /* INICIO PAGINA INICIO */
     .presentacion{
-        margin: 3rem auto;
         font-size: 1.6rem;
+        min-height: calc(100vh - 140.4px);
         &__info__texto{
             padding: .2em;
+        }
+        &__imagen{
+            margin: 0 auto;
         }
     }
     .habilidades{
@@ -105,10 +108,13 @@ html{
     }
     /* INICIO PAGINA INICIO */
     .presentacion{
-        margin: 2rem auto;
         font-size: 1.7rem;
+        min-height: calc(100vh - 122.4px);
         &__info__texto{
             padding: .4em;
+        }
+        &__imagen{
+            margin: 0 auto;
         }
     }
     .habilidades{
@@ -167,9 +173,16 @@ html{
 }
 @media only screen and (min-width:768px) and (max-width:992px) {
     /* INICIO PAGINA INICIO */
+    
     .presentacion{
-        margin: 2rem auto;
         font-size: 1.8rem;
+        &__info{
+            margin: 0;
+        }
+
+        &__imagen{
+            margin: 0 auto;
+        }
         &__info__texto{
             padding: .5em;
         }

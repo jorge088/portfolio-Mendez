@@ -1,19 +1,21 @@
 
 .header{
     position: sticky;
-    z-index: 20;
+    z-index: 90;
     top: 0;
     font-size: 1rem;
+    background-color: #064663;
     &__nav{
-        padding: .3em 1em;
-        background-color: #064663;
+        padding: .3em 2em;
 
         &__logo{
             @include titulos_font($fontSize:2em);
-            font-weight: 900;
+            font-weight: 800;
             &:hover{
                 font-weight: bolder;
                 color: #fff;
+                text-shadow: 1px 0 0 #fff;
+
             }
         }
 
@@ -27,6 +29,7 @@
                 color: #dad6d6;
                 font-weight: bolder;
                 font-size: 1.2em;
+                margin-right: .5em;
                 font-family: 'Alegreya Sans', sans-serif;
             }
 
@@ -52,7 +55,7 @@
 }
 
 .active{
-    border-bottom: 1px solid #fff;
+    text-decoration: underline;
     text-shadow: 1px 0 0 #fff;
 }
 /* TITULO */
@@ -64,12 +67,13 @@
     font-size: 3rem;
     & h1{ 
         @include titulos_font($fontSize:.6em);
-        padding: .6em 0;
+        padding: 0;
+        margin: .5em 0;
         font-weight: 700;
     }
     & p{
         @include text_font($fontSize:.4em,$textAlign:center);
-        padding-bottom: .6em ;
+        padding-bottom: .5em ;
     }
 }
 /* FIN TITULO */

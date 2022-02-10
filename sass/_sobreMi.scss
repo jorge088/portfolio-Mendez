@@ -53,3 +53,39 @@
     }
 }
 /*FIN INFORMACIÓN*/
+
+// INICIO HABILIDADES
+.habilidades{
+    border-top: 3px solid $marronClaro;
+    margin: 4rem auto;
+    font-size: 1rem;
+    &__titulo {
+        @include titulos_font($fontSize:1.8em,$textDeco:underline);
+        margin: 1.2em 0;
+    }
+    &__descrip {
+        text-align: center;
+        @include flex($direccion:row , $justifyCont:space-around );
+        &__item {
+            width: 10em;
+            margin: 1em 0;
+            & img{
+                width: 5.8em;
+                height: auto;
+                transition: 1.5s;
+                &:hover{
+                    filter: drop-shadow(1px 1px 8px #dad6d6);
+                    transform: rotate(360deg);
+                    cursor: pointer;
+                }
+            }
+            & p{
+                @include text_font($fontSize:.9em,$textAlign:center);
+                font-weight: 900;
+                padding: .5em 0;
+                font-style: italic;
+            }
+        }
+    }
+}
+// FIN HABILIDADES
