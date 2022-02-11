@@ -1,7 +1,7 @@
 // INICIO PRESENTACION
 .presentacion{
     min-height: calc(100vh - 132px);
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     padding: 1em;
     align-items: center;
     margin: 0 auto;
@@ -11,7 +11,7 @@
         padding: 0;
     }
     &__info__titulo{
-        @include titulos_font($fontSize:1.8em);
+        @include titulos_font($fontSize:2em);
         margin: .2em 0;
     }
     &__info__texto{

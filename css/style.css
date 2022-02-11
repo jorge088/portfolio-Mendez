@@ -126,7 +126,7 @@
 
 .presentacion {
   min-height: calc(100vh - 132px);
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   padding: 1em;
   align-items: center;
   margin: 0 auto;
@@ -141,7 +141,7 @@
   padding: 0;
 }
 .presentacion__info__titulo {
-  font-size: 1.8em;
+  font-size: 2em;
   font-family: "Alegreya Sans", sans-serif;
   text-align: center;
   color: #fff;
@@ -293,8 +293,9 @@
   border-bottom: 2px solid #fff;
 }
 .proyectos__item__img img {
-  width: 90%;
-  margin: 1em;
+  width: 100%;
+  height: 350px;
+  cursor: pointer;
 }
 .proyectos__item__detalle {
   display: flex;
@@ -491,6 +492,7 @@ html body {
   }
   .proyectos__item__img img {
     width: 100%;
+    height: 220px;
     margin: 0;
   }
   .proyectos__item__detalle {
@@ -572,6 +574,7 @@ html body {
   }
   .proyectos__item__img img {
     width: 100%;
+    height: 300px;
     margin: 0;
   }
 
