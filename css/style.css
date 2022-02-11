@@ -173,7 +173,6 @@
 
 /* INFORMACION */
 .informacion {
-  width: 95%;
   margin: 2rem auto;
   font-size: 1rem;
 }
@@ -186,6 +185,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .informacion__item:hover::after {
   top: 0;
@@ -206,6 +206,9 @@
   transition: 0.7s ease all;
   padding: 1em 1em;
 }
+.informacion__item span:hover img {
+  filter: drop-shadow(1px 1px 6px #dad6d6);
+}
 .informacion__item h2 {
   font-size: 1.8em;
   font-family: "Alegreya Sans", sans-serif;
@@ -217,18 +220,14 @@
 .informacion__item p {
   font-size: 1.2em;
   font-family: "Varela Round", sans-serif;
-  text-align: justify;
+  text-align: center;
   color: #fff;
   margin: 0.4em 0;
 }
 .informacion__item__img img {
   width: 5.5em;
   margin: 0.5em 0;
-  transition: 0.6s;
-}
-.informacion__item__img img:hover {
-  filter: drop-shadow(1px 1px 6px #dad6d6);
-  cursor: pointer;
+  transition: 1s ease all;
 }
 .informacion__bordes {
   border-right: 3px solid #ECB365;
@@ -258,7 +257,7 @@
   flex-wrap: wrap;
 }
 .habilidades__descrip__item {
-  width: 10em;
+  width: 10.5em;
   margin: 1em 0;
 }
 .habilidades__descrip__item img {
@@ -319,9 +318,17 @@
   color: #fff;
   margin: 1em 0;
 }
-.proyectos__item__detalle__boton {
-  font-size: 1.4em;
-  width: 8em;
+.proyectos__item__detalle__botones {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.proyectos__item__detalle__botones__boton {
+  font-size: 1.3em;
+  width: 6em;
   padding: 0.2em;
   font-weight: bolder;
   text-decoration: none;
@@ -332,13 +339,13 @@
   border-radius: 2px;
   cursor: pointer;
   overflow: hidden;
-  margin: 1em auto;
+  margin: 1em 1em;
 }
-.proyectos__item__detalle__boton span {
+.proyectos__item__detalle__botones__boton span {
   position: relative;
   z-index: 2;
 }
-.proyectos__item__detalle__boton::after {
+.proyectos__item__detalle__botones__boton::after {
   content: "";
   width: 8.4em;
   height: 3.2em;
@@ -350,7 +357,7 @@
   transition: 0.4s ease-in-out all;
   background-color: #bd7e27;
 }
-.proyectos__item__detalle__boton:hover::after {
+.proyectos__item__detalle__botones__boton:hover::after {
   top: 0;
 }
 

@@ -22,27 +22,32 @@
                 @include text_font($fontSize:1.1em,$textAlign:center);
                  margin: 1em 0;
             }
-            &__boton{
-                @include boton($fontSize:1.4em , $width:8em , $padding:.2em);
-                margin: 1em auto;
-                & span{
-                    position: relative;
-                    z-index: 2;
-                }
-                &::after{
-                    content: "";
-                    width: 8.4em;
-                    height:3.2em;
-                    top: -4em;
-                    left: 0;
-                    z-index: 1;
-                    position: absolute;
-                    border-radius: 0 0 100% 100%;
-                    transition: .4s ease-in-out all;
-                    background-color: #bd7e27;
-                }
-                &:hover::after{
-                    top: 0;
+            &__botones{
+                width: 100%;
+                @include flex($direccion:row, $justifyCont:center);
+                
+                &__boton{
+                    @include boton($fontSize:1.3em , $width:6em , $padding:.2em);
+                    margin: 1em 1em;
+                    & span{
+                        position: relative;
+                        z-index: 2;
+                    }
+                    &::after{
+                        content: "";
+                        width: 8.4em;
+                        height:3.2em;
+                        top: -4em;
+                        left: 0;
+                        z-index: 1;
+                        position: absolute;
+                        border-radius: 0 0 100% 100%;
+                        transition: .4s ease-in-out all;
+                        background-color: #bd7e27;
+                    }
+                    &:hover::after{
+                        top: 0;
+                    }
                 }
             }
         }
