@@ -4,7 +4,7 @@
     z-index: 90;
     top: 0;
     font-size: 1rem;
-    background-color: #064663;
+    background-color: $azul-secundario;
     &__nav{
         padding: .3em 2em;
 
@@ -61,7 +61,7 @@
 /* TITULO */
 .titulo{
     width: 100%;
-    background-color:#064663;
+    background-color:$azul-secundario;
     @include flex($direccion:column , $justifyCont:center);
     text-align: center;
     font-size: 3rem;

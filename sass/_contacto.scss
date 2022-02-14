@@ -1,16 +1,55 @@
 /* FORMULARIO DE CONTACTO */
 .formulario{
     @extend .contenidoCentrado;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: 'Varela Round', sans-serif;
-    &__form label textarea:focus{
-        outline: #064663 solid 3px;
+    width: 50%;
+    & div{
+        margin: .5em 0;
     }
-    &__form_boton{
-        width: 100%;
-        color: #fff;
-        font-size: 1.2em;
-        transition: .5s;
+    &__label{
+        font-size: 1.3em;
+    }
+    &__input{
+        background-color: rgba($azul-secundario, 0.2);
+        font-size: 1.1em;
+        color: #FFF;
+        border-radius: 5px;
+        padding: .4em .6em;
+        transition: .3s ease all;
+        border: 1px solid #FFF;
+        &:focus{
+            background-color: rgba($azul-secundario, 0.65);
+            color: #FFF;
+            box-shadow: 0 0 0 1px #FFF;
+        }
+    }
+    & textarea{
+        min-height: 5.5em;
+    }
+    
+    &__boton{
+        @include boton($fontSize:1.3em, $width:100%, $padding:.5em);
+        border-radius: 6px;
+        & span{
+            position: relative;
+            z-index: 2;
+        }
+        &::after{
+            content: "";
+            width: 100%;
+            height:7em;
+            top: -7em;
+            left: 0;
+            z-index: 1;
+            position: absolute;
+            border-radius: 0 0 100% 100%;
+            transition: .4s ease-in-out all;
+            background-color: #bd7e27;
+        }
+        &:hover::after{
+            top: 0;
+        }
     }
 }
 /* FIN DE FORMULARIO DE CONTACTO */

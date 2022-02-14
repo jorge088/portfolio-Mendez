@@ -1,7 +1,7 @@
 
 .footer{
     @include flex($direccion:column , $justifyCont:center);
-    background-color: #04293A;
+    background-color: $azul-footer;
     font-size: 1rem;
     position:absolute;
     bottom: 0;
@@ -9,7 +9,7 @@
     &__text{
         @include text_font($fontSize:1.1em,$textAlign:center);
         margin: 0;
-        color: #ECB365;
+        color: #fff;
     }
     &__icons{
         padding: .2em 0;

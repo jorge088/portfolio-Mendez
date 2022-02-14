@@ -62,35 +62,39 @@
             Contáctame
         </h1>
         <p>
-            Podes enviarme un mensaje, completando el siguiente formulario.
+            Podes enviarme un correo, completando el siguiente formulario.
         </p>
     </div>
     <!-- FIN HEADER -->
 
 
     <div class="container">
-
         <!-- formulario de contacto -->
-        <section class="formulario">
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputName" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
-                    <div id="nameHelp" class="form-text">Ingresa tu nombre y apellido.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">Ingresa tu email.</div>
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Mensaje</label>
-                    <textarea class="form-control" aria-label="textarea"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary formulario__form_boton">Enviar</button>
-            </form>
-        </section>
+        <form class="formulario">
+            <div>
+                <label for="exampleInputName" class="form-label formulario__label">Nombre</label>
+                <input 
+                type="text" 
+                class="form-control formulario__input" 
+                id="exampleInputName" 
+                aria-describedby="nameHelp">
+            </div>
+            <div>
+                <label for="exampleInputEmail1" class="form-label formulario__label">Email</label>
+                <input 
+                type="email" 
+                class="form-control formulario__input" 
+                id="exampleInputEmail1" 
+                aria-describedby="emailHelp">
+            </div>
+            <div>
+                <label class="form-label formulario__label">Mensaje</label>
+                <textarea 
+                class="form-control formulario__input" 
+                aria-label="textarea"></textarea>
+            </div>
+            <button type="submit" class="btn formulario__boton"><span>Enviar</span></button>
+        </form>
     </div>
 
 

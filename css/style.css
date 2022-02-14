@@ -4,7 +4,7 @@
   z-index: 90;
   top: 0;
   font-size: 1rem;
-  background-color: #064663;
+  background-color: #0574af;
 }
 .header__nav {
   padding: 0.3em 2em;
@@ -60,7 +60,7 @@
 /* TITULO */
 .titulo {
   width: 100%;
-  background-color: #064663;
+  background-color: #0574af;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,7 +94,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #04293A;
+  background-color: #09587c;
   font-size: 1rem;
   position: absolute;
   bottom: 0;
@@ -106,7 +106,7 @@
   text-align: center;
   color: #fff;
   margin: 0;
-  color: #ECB365;
+  color: #fff;
 }
 .footer__icons {
   padding: 0.2em 0;
@@ -194,7 +194,8 @@
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #0b384d;
+  background-color: #0574af;
+  opacity: 0.35;
   position: absolute;
   top: -80em;
   left: 0;
@@ -266,7 +267,7 @@
   transition: 1.5s;
 }
 .habilidades__descrip__item img:hover {
-  filter: drop-shadow(1px 1px 8px #dad6d6);
+  filter: drop-shadow(1px 1px 10px #dad6d6);
   transform: rotate(360deg);
   cursor: pointer;
 }
@@ -290,7 +291,10 @@
   text-align: center;
   margin: 4em 0;
   padding-bottom: 2em;
-  border-bottom: 2px solid #fff;
+  border-bottom: 3px solid #ECB365;
+}
+.proyectos__item__img {
+  padding: 0.8em;
 }
 .proyectos__item__img img {
   width: 100%;
@@ -341,6 +345,7 @@
   cursor: pointer;
   overflow: hidden;
   margin: 1em 1em;
+  border-radius: 5px;
 }
 .proyectos__item__detalle__botones__boton span {
   position: relative;
@@ -411,17 +416,66 @@
 /* FIN GALERIA */
 /* FORMULARIO DE CONTACTO */
 .formulario {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: "Varela Round", sans-serif;
+  width: 50%;
 }
-.formulario__form label textarea:focus {
-  outline: #064663 solid 3px;
+.formulario div {
+  margin: 0.5em 0;
 }
-.formulario__form_boton {
+.formulario__label {
+  font-size: 1.3em;
+}
+.formulario__input {
+  background-color: rgba(5, 116, 175, 0.2);
+  font-size: 1.1em;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 0.4em 0.6em;
+  transition: 0.3s ease all;
+  border: 1px solid #FFF;
+}
+.formulario__input:focus {
+  background-color: rgba(5, 116, 175, 0.65);
+  color: #FFF;
+  box-shadow: 0 0 0 1px #FFF;
+}
+.formulario textarea {
+  min-height: 5.5em;
+}
+.formulario__boton {
+  font-size: 1.3em;
   width: 100%;
-  color: #fff;
-  font-size: 1.2em;
-  transition: 0.5s;
+  padding: 0.5em;
+  font-weight: bolder;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  font-family: "Alegreya Sans", sans-serif;
+  background-color: #14709b;
+  border-radius: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.formulario__boton span {
+  position: relative;
+  z-index: 2;
+}
+.formulario__boton::after {
+  content: "";
+  width: 100%;
+  height: 7em;
+  top: -7em;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+  border-radius: 0 0 100% 100%;
+  transition: 0.4s ease-in-out all;
+  background-color: #bd7e27;
+}
+.formulario__boton:hover::after {
+  top: 0;
 }
 
 /* FIN DE FORMULARIO DE CONTACTO */
@@ -437,15 +491,14 @@ html {
   font-size: 16px;
 }
 html body {
-  background-color: #041C32;
+  background-color: #07294b;
   position: relative;
   padding-bottom: 74.4px;
   min-height: 100vh;
 }
 
 .contenidoCentrado, .formulario {
-  margin: 2em auto;
-  width: 50%;
+  margin: 1em auto;
 }
 
 /* INICIO MEDIA QUERIES */
@@ -519,7 +572,7 @@ html body {
   /* FIN PAGINA GALERIA */
   /* INICIO PAGINA CONTACTO */
   .formulario {
-    width: 100%;
+    width: 90%;
     font-size: 0.8rem;
   }
 
@@ -593,7 +646,7 @@ html body {
   /* INICIO PAGINA CONTACTO */
   .formulario {
     width: 90%;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   /* FIN PAGINA CONTACTO */
@@ -658,8 +711,8 @@ html body {
   /* FIN PAGINA GALERIA */
   /* INICIO PAGINA CONTACTO */
   .formulario {
-    width: 80%;
-    font-size: 0.8rem;
+    width: 90%;
+    font-size: 0.9rem;
   }
 
   /* FIN PAGINA CONTACTO */

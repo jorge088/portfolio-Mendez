@@ -26,8 +26,7 @@ html{
 }
 
 .contenidoCentrado{ //clase para usar @extend
-    margin: 2em auto;
-    width: 50%;
+    margin: 1em auto;
 }
 /* INICIO MEDIA QUERIES */
 @media only screen and (max-width:575px) {
@@ -98,7 +97,7 @@ html{
 
     /* INICIO PAGINA CONTACTO */
     .formulario{
-        width: 100%;
+        width: 90%;
         font-size: .8rem;
     }
     /* FIN PAGINA CONTACTO */
@@ -171,7 +170,7 @@ html{
     /* INICIO PAGINA CONTACTO */
     .formulario{
         width: 90%;
-        font-size: .8rem;
+        font-size: .7rem;
     }
     /* FIN PAGINA CONTACTO */
 }
@@ -239,8 +238,8 @@ html{
 
     /* INICIO PAGINA CONTACTO */
     .formulario{
-        width: 80%;
-        font-size: .8rem;
+        width: 90%;
+        font-size: .9rem;
     }
     /* FIN PAGINA CONTACTO */
 }
