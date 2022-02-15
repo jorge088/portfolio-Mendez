@@ -2,9 +2,10 @@
 .presentacion{
     min-height: calc(100vh - 132px);
     font-size: 1.7rem;
-    padding: 1em;
-    align-items: center;
     margin: 0 auto;
+    padding: 1em 0;
+    @include flex($justifyCont:center,$wrap:no-wrap);
+    gap: 0;
     &__info__subtitulo{
         @include titulos_font($fontSize:1.2em);
         margin: 0;

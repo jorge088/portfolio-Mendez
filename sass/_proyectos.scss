@@ -12,10 +12,9 @@
             padding: .8em;
             & img{
                 width: 100%;
-                height: 350px;
+                height: 370px;
                 cursor: pointer;
             }
-            
         }
         &__detalle{
             @include flex($direccion:column , $justifyCont:center , $alignItems:center);

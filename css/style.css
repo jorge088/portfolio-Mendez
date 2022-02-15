@@ -127,9 +127,14 @@
 .presentacion {
   min-height: calc(100vh - 132px);
   font-size: 1.7rem;
-  padding: 1em;
-  align-items: center;
   margin: 0 auto;
+  padding: 1em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  gap: 0;
 }
 .presentacion__info__subtitulo {
   font-size: 1.2em;
@@ -298,7 +303,7 @@
 }
 .proyectos__item__img img {
   width: 100%;
-  height: 350px;
+  height: 370px;
   cursor: pointer;
 }
 .proyectos__item__detalle {
@@ -538,7 +543,7 @@ html body {
   /* FIN PAGINA SOBRE MI */
   /* INICIO PROYECTOS */
   .proyectos {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .proyectos__item {
     gap: 10px;
