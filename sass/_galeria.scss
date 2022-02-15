@@ -15,19 +15,39 @@
     margin: 2rem auto;
     text-align: center;
     font-size: 1rem;
-    &__item__img img{
-        width: 22em;
-        height: 22em;
-        margin: .5em 0;
-        border-radius: 10px;
-        transition: 0.4s;
+    cursor: pointer;
+    &__item{
+        position: relative;
+        overflow: hidden;
+        padding: .8em;
+        transition: .5s ease ;
+        &__img {
+            & img{
+                width: 100%;    
+                height: auto;
+                border-radius: 6px;
+            }
+        }
+        &__descrip{
+            position: absolute;
+            z-index: 1;
+            bottom: 10px;
+            width: 96%;
+            padding: .4em;
+            background: rgba(112, 112, 112, 0.7);
+            @include text_font($fontSize:1.3em,$textAlign:center);
+            font-weight: 700;
+            transition: .6s ease-in all ;
+            opacity: 0;
+        }
         &:hover{
-            box-shadow: 1px 1px 14px #fff;
+            & p{
+                opacity: 1;
+            }
+            filter: drop-shadow(1px 1px 12px #dad6d6);
+
         }
     }
-    &__item__descrip{
-        @include text_font($fontSize:1.2em,$textAlign:center);
-        margin: .4em 0;
-    }
+    
 }
 /* FIN GALERIA */
