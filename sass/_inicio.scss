@@ -1,6 +1,6 @@
 // INICIO PRESENTACION
 .presentacion{
-    min-height: calc(100vh - 132px);
+    min-height: calc(100vh - 132px); //Para ocupar toda la pantalla
     font-size: 1.7rem;
     margin: 0 auto;
     padding: 1em 0;
@@ -26,9 +26,8 @@
         margin: auto;
         clip-path: circle(5em at 49% 50%);
         background-size:cover;
-        transition: .8s;
+        transition: .8s ease-out;
         background-blend-mode:lighten;
-
         cursor: pointer;
         &:hover{
             clip-path: circle(5.5em at 49% 50%);

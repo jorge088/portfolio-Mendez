@@ -19,13 +19,7 @@
             margin: .2em .5em;
             transition: .7s;
         }
-        // &__ig img:hover{
-        //     filter: drop-shadow(1px 1px 10px rgb(243, 65, 228));
-        // }
-        // &__lk img:hover{
-        //     filter: drop-shadow(1px 1px 10px rgb(90, 134, 199));
-        // }
-        //uso mapa
+        //Uso el mapa
         @each $nombre , $valor in $red-social {
             &__#{$nombre} img:hover{
                 filter: $valor;

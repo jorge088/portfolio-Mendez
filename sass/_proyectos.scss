@@ -34,6 +34,7 @@
                     @include boton($fontSize:1.3em , $width:6em , $padding:.2em);
                     margin: 1em 1em;
                     border-radius: 5px;
+                    // Efecto: Cambio de color sobre boton
                     & span{
                         position: relative;
                         z-index: 2;
@@ -53,6 +54,7 @@
                     &:hover::after{
                         top: 0;
                     }
+                    // Fin efecto cambio de color
                 }
             }
         }

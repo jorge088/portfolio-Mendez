@@ -25,12 +25,13 @@
         }
     }
     & textarea{
-        min-height: 5.5em;
+        min-height: 7em;
     }
     
     &__boton{
-        @include boton($fontSize:1.3em, $width:100%, $padding:.5em);
+        @include boton($fontSize:1.3em, $width:100%, $padding:.3em);
         border-radius: 6px;
+        // Efecto cambio de color sobre boton
         & span{
             position: relative;
             z-index: 2;
@@ -50,6 +51,7 @@
         &:hover::after{
             top: 0;
         }
+        // Fin efecto cambio de color
     }
 }
 /* FIN DE FORMULARIO DE CONTACTO */

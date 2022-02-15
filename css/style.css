@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .header {
   position: sticky;
   z-index: 90;
@@ -167,7 +166,7 @@
   margin: auto;
   clip-path: circle(5em at 49% 50%);
   background-size: cover;
-  transition: 0.8s;
+  transition: 0.8s ease-out;
   background-blend-mode: lighten;
   cursor: pointer;
 }
@@ -176,7 +175,6 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* INFORMACION */
 .informacion {
   margin: 2rem auto;
   font-size: 1rem;
@@ -240,7 +238,6 @@
   border-left: 3px solid #ECB365;
 }
 
-/*FIN INFORMACIÓN*/
 .habilidades {
   border-top: 3px solid #ECB365;
   margin: 4rem auto;
@@ -377,20 +374,7 @@
 .cancion {
   margin: 2rem auto;
   width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
   font-size: 1rem;
-}
-.cancion h3 {
-  font-size: 1.4em;
-  font-family: "Alegreya Sans", sans-serif;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
 }
 
 /* FIN CANCION */
@@ -462,12 +446,12 @@
   box-shadow: 0 0 0 1px #FFF;
 }
 .formulario textarea {
-  min-height: 5.5em;
+  min-height: 7em;
 }
 .formulario__boton {
   font-size: 1.3em;
   width: 100%;
-  padding: 0.5em;
+  padding: 0.3em;
   font-weight: bolder;
   text-decoration: none;
   position: relative;
@@ -540,10 +524,6 @@ html body {
     margin: 0 auto;
   }
 
-  .habilidades {
-    font-size: 0.9rem;
-  }
-
   /* FIN PAGINA INICIO */
   /* INICIO PAGINA SOBRE MI */
   .informacion {
@@ -554,6 +534,10 @@ html body {
     border-left: none;
     border-top: 3px solid #ECB365;
     border-bottom: 3px solid #ECB365;
+  }
+
+  .habilidades {
+    font-size: 0.9rem;
   }
 
   /* FIN PAGINA SOBRE MI */
@@ -621,10 +605,6 @@ html body {
     margin: 0 auto;
   }
 
-  .habilidades {
-    font-size: 0.9rem;
-  }
-
   /* FIN PAGINA INICIO */
   /* INICIO PAGINA SOBRE MI */
   .informacion {
@@ -635,6 +615,10 @@ html body {
     border-left: none;
     border-top: 3px solid #ECB365;
     border-bottom: 3px solid #ECB365;
+  }
+
+  .habilidades {
+    font-size: 0.9rem;
   }
 
   /* FIN PAGINA SOBRE MI */

@@ -2,14 +2,10 @@
 .cancion{
     margin: 2rem auto;
     width: 50%;
-    @include flex($direccion:row , $justifyCont:center);
-    gap: 10px; 
     font-size: 1rem; 
-    & h3{
-        @include titulos_font($fontSize:1.4em);
-    }
 }
 /* FIN CANCION */
+
 /* GALERIA */
 .galeria{
     margin: 2rem auto;
@@ -45,9 +41,7 @@
                 opacity: 1;
             }
             filter: drop-shadow(1px 1px 12px #dad6d6);
-
         }
     }
-    
 }
 /* FIN GALERIA */

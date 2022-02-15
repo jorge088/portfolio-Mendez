@@ -1,4 +1,4 @@
-/* INFORMACION */
+// INFORMACION 
 .informacion{
     margin: 2rem auto;
     font-size: 1rem;
@@ -7,7 +7,8 @@
         text-align: center;
         position: relative;
         overflow: hidden;
-        cursor: pointer;
+        cursor: pointer;    
+        // Efecto de cuadro luminoso
         &:hover::after{
             top: 0;
         }
@@ -17,7 +18,6 @@
             height: 100%;
             background-color: $azul-secundario;
             opacity: .35;
-
             position: absolute;
             top:-80em;
             left: 0;
@@ -34,6 +34,7 @@
                 }
             }
         }
+        // Fin efecto de cuadro luminoso
         & h2{
             @include titulos_font($fontSize:1.8em);
             margin: .4em 0;
@@ -54,7 +55,7 @@
         border-left: 3px solid $marronClaro;
     }
 }
-/*FIN INFORMACIÓN*/
+// FIN INFORMACIÓN
 
 // INICIO HABILIDADES
 .habilidades{

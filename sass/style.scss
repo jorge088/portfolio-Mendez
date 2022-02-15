@@ -28,6 +28,7 @@ html{
 .contenidoCentrado{ //clase para usar @extend
     margin: 1em auto;
 }
+
 /* INICIO MEDIA QUERIES */
 @media only screen and (max-width:575px) {
     .titulo{
@@ -44,9 +45,7 @@ html{
             margin: 0 auto;
         }
     }
-    .habilidades{
-        font-size: .9rem;
-    } 
+    
     /* FIN PAGINA INICIO */
 
     /* INICIO PAGINA SOBRE MI */
@@ -59,7 +58,9 @@ html{
             border-bottom: 3px solid $marronClaro;
         }
     }
-    
+    .habilidades{
+        font-size: .9rem;
+    } 
     /* FIN PAGINA SOBRE MI */
 
     /* INICIO PROYECTOS */
@@ -109,6 +110,7 @@ html{
     }
     /* FIN PAGINA CONTACTO */
 }
+
 @media only screen and (min-width:576px) and (max-width:767px) {
     .titulo{
         font-size: 2.5rem;
@@ -124,9 +126,6 @@ html{
             margin: 0 auto;
         }
     }
-    .habilidades{
-        font-size: .9rem;
-    } 
     /* FIN PAGINA INICIO */
     
     /* INICIO PAGINA SOBRE MI */
@@ -139,7 +138,9 @@ html{
             border-bottom: 3px solid $marronClaro;
         }
     }
-    
+    .habilidades{
+        font-size: .9rem;
+    } 
     /* FIN PAGINA SOBRE MI */
 
     /* INICIO PAGINA PROYECTOS */
@@ -183,7 +184,6 @@ html{
 }
 @media only screen and (min-width:768px) and (max-width:992px) {
     /* INICIO PAGINA INICIO */
-    
     .presentacion{
         font-size: 1.8rem;
         &__info{
@@ -197,8 +197,6 @@ html{
             padding: .5em;
         }
     }
-    
-
     /* FIN PAGINA INICIO  */
 
     /* INICIO PAGINA SOBRE MI */
@@ -211,7 +209,6 @@ html{
             border-bottom: 3px solid $marronClaro;
         }
     }
-    
     /* FIN PAGINA SOBRE MI */
 
     /* INICIO PAGINA PROYECTOS */

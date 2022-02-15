@@ -19,6 +19,7 @@
     flex-wrap: $wrap;
     
 }
+// Botones y para aplicar efecto en hover
 @mixin boton($fontSize:1em , $width:1em , $padding:1em){
     font-size: $fontSize;
     width: $width;
